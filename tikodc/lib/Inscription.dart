@@ -269,7 +269,7 @@ void _openPopup(context) {
                                   color: Colors.blue,
                                 )),
                             Expanded(
-                              flex:   3,
+                              flex: 3,
                               child: Text(
                                 'Continuer avec Twitter',
                                 style: TextStyle(
@@ -283,7 +283,87 @@ void _openPopup(context) {
                       ),
                     ),
                   ),
-                 
+                  const SizedBox(
+                    height: 60.0,
+                  ),
+                  ButtonTheme(
+                    child: ElevatedButton(
+                      onPressed: () => {},
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        shape: const RoundedRectangleBorder(
+                          side: BorderSide(
+                            color: Colors.transparent,
+                          ),
+                        ),
+                        primary: Colors.white,
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.min,
+                          children: const <Widget>[
+                            Expanded(
+                              child: Text(
+                                'En continuant,tu acceptes nos Conditions d’utilisation et reconnais avoir lu notre Politique de confidantialité pour savoir comment nous collectons, utilisons et partageons tes donnée',
+                                style: TextStyle(
+                                  fontSize: 10.0,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15.0,
+                  ),
+                  ButtonTheme(
+                    minWidth: 250.0,
+                    child: ElevatedButton(
+                      onPressed: () => {},
+                      style: ElevatedButton.styleFrom(
+                        elevation: 0.0,
+                        shape: const RoundedRectangleBorder(
+                          side: BorderSide(
+                            color: Colors.transparent,
+                          ),
+                        ),
+                        primary: Colors.red[50],
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(30, 10, 0, 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.min,
+                          children: const <Widget>[
+                            Expanded(
+                              flex: 1,
+                              child: Text(
+                                "Tu as déjà un compte ? ",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 1,
+                              child: Text(
+                                'Connexion',
+                                style: TextStyle(
+                                  fontSize: 15.0,
+                                  color: Colors.red,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
