@@ -45,7 +45,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         items: <BottomNavigationBarItem>[
           const BottomNavigationBarItem(
             icon: Icon(Icons.home), // icon: Icon(Icons.home),
-            label: 'Acceuil',
+            label: 'Accueil',
           ),
           const BottomNavigationBarItem(
             icon: Icon(Icons.flash_on),
@@ -69,7 +69,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         ],
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Color(0xFF141518),
+        backgroundColor: const Color(0xFF141518),
         selectedItemColor: Colors.white,
         // showSelectedLabels: false,
         // showUnselectedLabels: false,
@@ -291,7 +291,26 @@ class PostContent extends StatelessWidget {
                     // color: Colors.teal,
                     child: Column(children: [
                       Icon(
-                        Icons.comment,
+                        FontAwesomeIcons.solidComment,
+                        color: Colors.white.withOpacity(0.85),
+                        size: 41,
+                      ),
+                      const Text(
+                        '250',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      )
+                    ]),
+                  ),
+                  SizedBox(
+                    height: 80,
+                    // color: Colors.teal,
+                    child: Column(children: [
+                      Icon(
+                        Icons.bookmark,
                         color: Colors.white.withOpacity(0.85),
                         size: 45,
                       ),
@@ -310,9 +329,9 @@ class PostContent extends StatelessWidget {
                     // color: Colors.teal,
                     child: Column(children: [
                       Icon(
-                        Icons.share,
+                        FontAwesomeIcons.share,
                         color: Colors.white.withOpacity(0.85),
-                        size: 45,
+                        size: 35,
                       ),
                       const Text(
                         '24',
