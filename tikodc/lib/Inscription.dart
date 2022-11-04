@@ -16,8 +16,10 @@ class PageInscriprion extends StatelessWidget {
         theme: ThemeData(primaryColor: Colors.white),
         home: Scaffold(
           appBar: AppBar(
+            centerTitle: true,
             title: const Text(
               'Profil',
+              style: TextStyle(color: Colors.black),
             ),
             backgroundColor: Colors.white,
           ),
@@ -76,7 +78,7 @@ void _openPopup(context) {
       backgroundColor: Colors.white,
       builder: (BuildContext bc) {
         return Container(
-          height: MediaQuery.of(context).size.height * .90,
+          height: MediaQuery.of(context).size.height * .80,
           child: Padding(
             padding: const EdgeInsets.all(12.0),
             child: Center(
@@ -111,6 +113,7 @@ void _openPopup(context) {
                     ),
                     textAlign: TextAlign.center,
                   ),
+                  SizedBox(height: 15),
                   ButtonTheme(
                     minWidth: 250.0,
                     child: ElevatedButton(
@@ -137,11 +140,11 @@ void _openPopup(context) {
                                   color: Colors.black,
                                 )),
                             Expanded(
-                              flex: 2,
+                              flex: 6,
                               child: Text(
                                 'Utilise un téléphone ou une adresse e-mail',
                                 style: TextStyle(
-                                  fontSize: 15.0,
+                                  fontSize: 12.0,
                                   color: Colors.black87,
                                 ),
                               ),
@@ -180,11 +183,11 @@ void _openPopup(context) {
                                   color: Colors.blue,
                                 )),
                             Expanded(
-                              flex: 2,
+                              flex: 3,
                               child: Text(
                                 'Continuer avec Facebook',
                                 style: TextStyle(
-                                  fontSize: 15.0,
+                                  fontSize: 14.0,
                                   color: Colors.black87,
                                 ),
                               ),
@@ -223,11 +226,11 @@ void _openPopup(context) {
                                   color: Colors.red,
                                 )),
                             Expanded(
-                              flex: 2,
+                              flex: 3,
                               child: Text(
                                 'Continuer avec Google',
                                 style: TextStyle(
-                                  fontSize: 15.0,
+                                  fontSize: 14.0,
                                   color: Colors.black87,
                                 ),
                               ),
@@ -260,17 +263,17 @@ void _openPopup(context) {
                           mainAxisSize: MainAxisSize.min,
                           children: const <Widget>[
                             Expanded(
-                                flex: 3,
+                                flex: 1,
                                 child: FaIcon(
                                   FontAwesomeIcons.twitter,
                                   color: Colors.blue,
                                 )),
                             Expanded(
-                              flex:   4,
+                              flex:   3,
                               child: Text(
                                 'Continuer avec Twitter',
                                 style: TextStyle(
-                                  fontSize: 15.0,
+                                  fontSize: 14.0,
                                   color: Colors.black87,
                                 ),
                               ),
@@ -280,9 +283,7 @@ void _openPopup(context) {
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 15.0,
-                  ),
+                 
                 ],
               ),
             ),
