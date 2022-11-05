@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:untitled/Inscription.dart';
+import 'package:untitled/Profil.dart';
 import 'package:untitled/splash.dart';
 import 'package:untitled/home.dart';
 import 'package:video_player/video_player.dart';
